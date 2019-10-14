@@ -287,7 +287,7 @@ class Frisbee {
       };
 
       if (this.opts.body || options.body)
-        opts.body = { ...this.opts.body, ...options.body };
+        opts.body = options.body || this.opts.body;
 
       if (this.opts.params || options.params)
         opts.params = { ...this.opts.params, ...options.params };
